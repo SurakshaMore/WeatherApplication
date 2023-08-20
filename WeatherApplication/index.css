@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #343a40;
+  height: 90px;
+  padding: 5px;
+  margin-bottom: 30px;
+
+  width: 100%;
+}
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navItems {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px;
+  color: #f8f9fa;
+}
+
+/* CART */
+
+.cart {
+  background-image: url("./src/assets/bg-cart.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  width: 240px;
+  height: 260px;
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.cart:hover {
+  transform: scale(1.05);
+}
+.cart2 {
+  background-color: #f0f0f0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  width: 240px;
+  height: 260px;
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.allCart {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.location {
+  padding: 5px;
+  color: #067947;
+  font-weight: 700;
+}
+.weatherCondn {
+  padding: 5px;
+  color: #067947;
+  font-weight: 500;
+}
+.temp {
+  padding: 5px;
+  color: #067947;
+  font-weight: 500;
+}
+.humidity {
+  padding: 5px;
+  color: #067947;
+  font-weight: 500;
+}
+/* WeatherFooter.css */
+
+.weather-footer {
+  margin-top: 30px;
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 20px 0;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.weather-footer p {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .weather-footer {
+    padding: 10px 0;
+  }
+}
+
+span {
+  font-weight: 500;
+  padding-right: 5px;
+  color: #232319;
+}
+
+/* SEARCH CONTAINER */
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 30%;
+  padding: 0 0 10px 0;
+}
+
+/* Search Box */
+.searchbox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input[type="text"] {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+/* Search Button */
+.search-btn {
+  background-color: #4d1c4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
